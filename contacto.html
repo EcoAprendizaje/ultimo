@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactos</title>
+  <link class="f" rel="shortcut icon" href="img/Logo-redondo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/contac.css">
+  <link rel="stylesheet" href="css/animaciones.css">
+</head>
+<body >
+  <!--fin de nav -->
+  <nav class="navbar">
+    <div class="logo">Cris Studio</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="menu">
+      <button class="close" onclick="toggleMenu()">&times;</button>
+      <a href="index.html">INICIO</a>
+      <a href="quienes somos.html">QUIENES SOMOS</a>
+      <a href="servicios.html">SERVICIOS</a>
+      <a href="ofertas.html">OFERTAS</a>
+      <a href="contacto.html">CONTACTO</a>
+      <button class="cta"><a href="Formulario.html">Reserva Tu Cita</a></button>
+    </div>
+  </nav>
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h2 class="highlight-text">Contactos</h2>
+    </div>
+  </div>
+  <section class="contact-section">
+    <p>CONTÁCTANOS</p>
+    <h1>Siéntete Libre de Contactarnos</h1>
+    <!-- Información de contacto -->
+    <div class="contact-info">
+        <div class="info-item">
+            <h3>Dirección</h3>
+            <p> Colonia Nueva Apopa, Chalet 86,<br>Frente a Cancha De Futbol</p>
+        </div>
+        <div class="info-item">
+            <h3>Teléfono</h3>
+            <p> +503 7912 4145</p>
+        </div>
+        <div class="info-item">
+            <h3>Correo Electrónico</h3>
+            <p>elsycoreas71@gmail.com</p>
+        </div>
+    </div>
+    <!-- Contenido: Mapa y Formulario -->
+    <div class="contact-content">
+        <!-- Mapa -->
+        <iframe 
+            src="https://maps.google.com/maps?q=Colonia%20Nueva%20Apopa%2C%20Chalet%2086%2C%20Frente%20a%20Cancha%20De%20Futbol&t=&z=15&ie=UTF8&iwloc=&output=embed"">
+        </iframe>
+
+        <!-- Formulario -->
+        <div class="form-container">
+          <h1 class="formulario__titulo">Cris Salon</h1>
+          <h3 class="formulario__subtitulo">Reservas</h3>
+          <p class="formulario__parrafo">
+            Llena este pequeño formulario para agendar tu cita.
+          </p>
+          <label for="cliente" class="formulario__label">Nombre Completo</label>
+          <input
+            id="cliente"
+            type="text"
+            class="formulario__input"
+            placeholder="Introduce Tu Nombre Completo"
+          />
+          <label for="fecha" class="formulario__label"
+            >Indica La Fecha De Tu Reserva</label
+          >
+          <input
+            id="fecha"
+            type="date"
+            class="formulario__input"
+            pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+          />
+          <label for="hora" class="formulario__label"
+            >Indica La hora De Tu Reserva</label
+          >
+          <input id="hora" type="time" class="formulario__input" />
+          <label for="empleado" class="formulario__label" >Servicio</label>
+          <input
+            id="empleado"
+            type="text"
+            class="formulario__input"
+            placeholder="Detalla El Servicio Que Necesitas"
+          />
+          </select>
+          <label for="servicio" class="formulario__label"
+            >¿Cuál es el servicio que se desea realizar?</label
+          >
+          <select id="servicio" name="listaservicios" class="formulario__input">
+            <option>Cortes De Mujer</option>
+            <option>Colores Fantasia</option>
+            <option>Mechas Y Tintes</option>
+            <option>Alisado Sin Formol</option>
+            <option>Alisado Con Formol</option>
+            <option>Planchado Y Pistoleado</option>
+            <option>Otros(Detalla tu servicio)</option>
+          </select>
+          <div id="respuesta"></div>
+          <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+        </form>
+        </div>
+    </div>
+</section>
+  <footer>
+    <div class="section contact-info">
+      <h3>Contacto</h3>
+      <p><b>Tel:</b> +503 7912 4145</p>
+      <p><b>Email:</b> elsycoreas71@gmail.com</p>
+      <p><b>Dirección:</b> Colonia Nueva Apopa, Chalet 86,<br>Frente a Cancha De Futbol</p>
+    </div>
+
+    <section class="section social-media">
+      <h3>Síguenos</h3>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
+        <a href="#" aria-label="Instagram"><img src="img/whatsapp.png" alt="Instagram"></a>
+      </div>
+
+      <div class="section policies">
+        <a href="index.html">INICIO</a>
+        <a href="quienes somos.html">QUIENES SOMOS</a>
+        <a href="servicios.html">SERVICIOS</a>
+        <a href="ofertas.html">OFERTAS</a>
+        <a href="contacto.html">CONTACTO</a>
+        <button class="cta"><a href="Formulario.html">Reserva Tu Cita</a></button>
+
+      </div>
+
+      <div class="section whatsapp">
+        <img src="img/Logo-redondo.png" alt="WhatsApp">
+        <p>2024 Estilista ©<br> Desarrollado por <a href="#" style="color: #ffc107;">Charlie Ramirez</a></p>
+      </div>
+    </section>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animaciones.js"></script>
+  <script src="js/form.js"></script>
+</body>
+
+</html>
